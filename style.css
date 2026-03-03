@@ -1,0 +1,249 @@
+/* ===========================
+   GLOBAL RESET & BASE STYLES
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a4a5a;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #9b7ec8;
+    border-bottom: 2px solid #d4c2f0;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.05em;
+    color: #a08bc4;
+    margin-bottom: 6px;
+}
+
+p {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+a {
+    color: #8a9ad6;
+    text-decoration: none;
+}
+
+/* ===========================
+   PAGE 1 — Character Profile Sidebar
+   =========================== */
+.page1-body {
+    background: linear-gradient(180deg, #f0e6ff, #e8daf5);
+    min-height: 100vh;
+    padding: 15px;
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.character-name {
+    font-size: 1.3em;
+    color: #b07cc8;
+    text-align: center;
+    border-bottom: 2px solid #d4bce8;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 10px;
+    border: 2px solid #d4bce8;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(180, 160, 210, 0.3);
+}
+
+.info-section {
+    text-align: left;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #e0d0f0;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85em;
+}
+
+.info-table td {
+    padding: 4px 6px;
+    border-bottom: 1px solid #ede0f5;
+}
+
+.info-table .label {
+    font-weight: bold;
+    color: #9b7ec8;
+    width: 40%;
+}
+
+.allies-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.85em;
+}
+
+.allies-list li {
+    padding: 3px 0;
+    padding-left: 15px;
+    position: relative;
+}
+
+.allies-list li::before {
+    content: "⚔";
+    position: absolute;
+    left: 0;
+}
+
+/* ===========================
+   PAGE 2 — Biography & Moves
+   =========================== */
+.page2-body {
+    background: linear-gradient(135deg, #f5f0ff, #ece4f8, #eaf0ff);
+    min-height: 100vh;
+    padding: 20px 25px;
+}
+
+.content-area h1 {
+    margin-top: 15px;
+}
+
+.content-area h1:first-child {
+    margin-top: 0;
+}
+
+.bio-section {
+    margin-bottom: 15px;
+}
+
+.combat-img {
+    float: right;
+    width: 250px;
+    border-radius: 10px;
+    margin: 0 0 10px 15px;
+    border: 2px solid #d4bce8;
+    box-shadow: 0 4px 12px rgba(180, 160, 210, 0.25);
+}
+
+.moves-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88em;
+    margin-top: 8px;
+}
+
+.moves-table thead {
+    background: #e8d8f5;
+}
+
+.moves-table th,
+.moves-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ede0f5;
+}
+
+.moves-table th {
+    color: #8b6aad;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.moves-table tbody tr:hover {
+    background: #f3ecfa;
+}
+
+/* ===========================
+   PAGE 3 — Game Appearances & Fun Facts
+   =========================== */
+.page3-body {
+    background: linear-gradient(135deg, #f2edff, #eee6f8, #edf2ff);
+    min-height: 100vh;
+    padding: 20px 25px;
+}
+
+.page3-grid {
+    display: flex;
+    gap: 25px;
+}
+
+.appearances-section {
+    flex: 1;
+}
+
+.facts-section {
+    flex: 1;
+}
+
+.timeline-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #d4bce8;
+    box-shadow: 0 4px 12px rgba(180, 160, 210, 0.25);
+}
+
+.appearances-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88em;
+}
+
+.appearances-table thead {
+    background: #e8d8f5;
+}
+
+.appearances-table th,
+.appearances-table td {
+    padding: 6px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ede0f5;
+}
+
+.appearances-table th {
+    color: #8b6aad;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.appearances-table tbody tr:hover {
+    background: #f3ecfa;
+}
+
+.facts-list {
+    list-style: none;
+    padding: 0;
+    font-size: 0.88em;
+}
+
+.facts-list li {
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    border-left: 3px solid #c4a8e0;
+}
+
+.facts-list li strong {
+    color: #9b7ec8;
+}
